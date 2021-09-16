@@ -75,7 +75,7 @@ namespace I2C_LCD1602 {
      * initial LCD, set I2C address. Address is 39/63 for PCF8574/PCF8574A
      * @param Addr is i2c address for LCD, eg: 0, 39, 63. 0 is auto find address
      */
-    //% blockId="I2C_LCD1620_SET_ADDRESS" block="LCD initialize with Address %addr"
+    //% blockId="I2C_LCD1620_SET_ADDRESS" block="用位址 %addr 起始LCD"
     //% weight=100 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function LcdInit(Addr: number) {
@@ -101,7 +101,7 @@ namespace I2C_LCD1602 {
      * @param x is LCD column position, eg: 0
      * @param y is LCD row position, eg: 0
      */
-    //% blockId="I2C_LCD1620_SHOW_NUMBER" block="show number %n|at x %x|y %y"
+    //% blockId="I2C_LCD1620_SHOW_NUMBER" block="顯示數字 %n|在 x %x|y %y"
     //% weight=90 blockGap=8
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
@@ -117,7 +117,7 @@ namespace I2C_LCD1602 {
      * @param x is LCD column position, [0 - 15], eg: 0
      * @param y is LCD row position, [0 - 1], eg: 0
      */
-    //% blockId="I2C_LCD1620_SHOW_STRING" block="show string %s|at x %x|y %y"
+    //% blockId="I2C_LCD1620_SHOW_STRING" block="顯示字串 %s|在 x %x|y %y"
     //% weight=90 blockGap=8
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
@@ -140,7 +140,7 @@ namespace I2C_LCD1602 {
     /**
      * turn on LCD
      */
-    //% blockId="I2C_LCD1620_ON" block="turn on LCD"
+    //% blockId="I2C_LCD1620_ON" block="打開LCD"
     //% weight=81 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function on(): void {
@@ -150,7 +150,7 @@ namespace I2C_LCD1602 {
     /**
      * turn off LCD
      */
-    //% blockId="I2C_LCD1620_OFF" block="turn off LCD"
+    //% blockId="I2C_LCD1620_OFF" block="關閉LCD"
     //% weight=80 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function off(): void {
@@ -160,7 +160,7 @@ namespace I2C_LCD1602 {
     /**
      * clear all display content
      */
-    //% blockId="I2C_LCD1620_CLEAR" block="clear LCD"
+    //% blockId="I2C_LCD1620_CLEAR" block="清除LCD"
     //% weight=85 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function clear(): void {
@@ -170,7 +170,7 @@ namespace I2C_LCD1602 {
     /**
      * turn on LCD backlight
      */
-    //% blockId="I2C_LCD1620_BACKLIGHT_ON" block="turn on backlight"
+    //% blockId="I2C_LCD1620_BACKLIGHT_ON" block="打開背光"
     //% weight=71 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function BacklightOn(): void {
@@ -181,7 +181,7 @@ namespace I2C_LCD1602 {
     /**
      * turn off LCD backlight
      */
-    //% blockId="I2C_LCD1620_BACKLIGHT_OFF" block="turn off backlight"
+    //% blockId="I2C_LCD1620_BACKLIGHT_OFF" block="關閉背光"
     //% weight=70 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function BacklightOff(): void {
@@ -192,7 +192,7 @@ namespace I2C_LCD1602 {
     /**
      * shift left
      */
-    //% blockId="I2C_LCD1620_SHL" block="Shift Left"
+    //% blockId="I2C_LCD1620_SHL" block="向左移"
     //% weight=61 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function shl(): void {
@@ -202,7 +202,7 @@ namespace I2C_LCD1602 {
     /**
      * shift right
      */
-    //% blockId="I2C_LCD1620_SHR" block="Shift Right"
+    //% blockId="I2C_LCD1620_SHR" block="向右移"
     //% weight=60 blockGap=8
     //% parts=LCD1602_I2C trackArgs=0
     export function shr(): void {
