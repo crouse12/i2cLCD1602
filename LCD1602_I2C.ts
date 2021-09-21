@@ -106,7 +106,7 @@ namespace I2C_LCD1602 {
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
     //% parts=LCD1602_I2C trackArgs=0
-    export function ShowNumber(n: number, x: number, y: number): void {
+    export function ShowNumber(x: number, y: number,n: number): void {
         let s = n.toString()
         ShowString(s, x, y)
     }
@@ -122,7 +122,7 @@ namespace I2C_LCD1602 {
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
     //% parts=LCD1602_I2C trackArgs=0
-    export function ShowString(s: string, x: number, y: number): void {
+    export function ShowString(x: number, y: number,s: string): void {
         let a: number
 
         if (y > 0)
