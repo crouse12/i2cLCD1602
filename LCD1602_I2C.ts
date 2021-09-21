@@ -101,7 +101,7 @@ namespace I2C_LCD1602 {
      * @param x is LCD column position, eg: 0
      * @param y is LCD row position, eg: 0
      */
-    //% blockId="I2C_LCD1620_SHOW_NUMBER" block="在 x %x|y %y|顯示數字 %n"
+    //% blockId="I2C_LCD1620_SHOW_NUMBER" block="顯示數字 %n|在 x %x|y %y"
     //% weight=90 blockGap=8
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
@@ -117,7 +117,7 @@ namespace I2C_LCD1602 {
      * @param x is LCD column position, [0 - 15], eg: 0
      * @param y is LCD row position, [0 - 1], eg: 0
      */
-    //% blockId="I2C_LCD1620_SHOW_STRING" block="在 x %x|y %y|顯示字串 %s"
+    //% blockId="I2C_LCD1620_SHOW_STRING" block="顯示字串 %s|在 x %x|y %y"
     //% weight=90 blockGap=8
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
